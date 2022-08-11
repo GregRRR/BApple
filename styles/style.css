@@ -53,7 +53,13 @@ h1 {
   fill: #1b1414;
   stroke: black;
   stroke-width: 5px;
-  text-shadow: 10px 10px black;
+  -webkit-animation: logoApple 3s ease-in-out infinite;
+          animation: logoApple 3s ease-in-out infinite;
+}
+.logo .logo-icon:hover {
+  fill: white;
+  height: 11vh;
+  transition: 0.4s ease-in;
 }
 
 ul {
@@ -73,12 +79,88 @@ ul .icon-github {
   height: 5vh;
   fill: #0e0c0c;
 }
+ul .icon-github:hover {
+  fill: white;
+  height: 6vh;
+  transition: 0.4s ease-in;
+}
 ul .icon-linked {
   height: 5vh;
   fill: #0e0c0c;
 }
+ul .icon-linked:hover {
+  fill: white;
+  height: 6vh;
+  transition: 0.4s ease-in;
+}
+ul .active {
+  background: blueviolet;
+  border-radius: 10px;
+  border: 3px solid white;
+}
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   background-color: red;
+  padding: 5rem;
+  border-bottom: 10px dashed white;
+}
+
+@-webkit-keyframes logoApple {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes logoApple {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hero .flex {
+  flex: 1;
+}
+
+.image-container {
+  position: relative;
+  border-right: solid 15px black;
+}
+.image-container .steve-image {
+  width: 100%;
+}
+.image-container .steve-quote {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  background: blueviolet;
+  border: 5px solid black;
+  color: white;
+  padding: 1rem;
+}
+
+.about-container {
+  background: white;
+  color: black;
+}
+.about-container .one-more-thing {
+  font-size: 15rem;
+  padding: 1rem;
+}
+.about-container p {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.about-container span {
+  color: red;
 }/*# sourceMappingURL=style.css.map */

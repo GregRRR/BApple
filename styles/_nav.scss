@@ -23,7 +23,12 @@ h1 {
     fill: rgb(27, 20, 20);
     stroke: black;
     stroke-width: 5px;
-    text-shadow: 10px 10px black;
+    animation: logoApple 3s ease-in-out infinite;
+    &:hover {
+      fill: rgb(255, 255, 255);
+      height: 11vh;
+      transition: 0.4s ease-in;
+    }
   }
 }
 
@@ -44,15 +49,44 @@ ul {
   .icon-github {
     height: 5vh;
     fill: rgb(14, 12, 12);
+    &:hover {
+      fill: rgb(255, 255, 255);
+      height: 6vh;
+      transition: 0.4s ease-in;
+    }
   }
 
   .icon-linked {
     height: 5vh;
     fill: rgb(14, 12, 12);
+    &:hover {
+      fill: rgb(255, 255, 255);
+      height: 6vh;
+      transition: 0.4s ease-in;
+    }
+  }
+
+  .active {
+    background: blueviolet;
+    border-radius: 10px;
+    border: 3px solid white;
   }
 }
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   background-color: red;
+  padding: 5rem;
+  border-bottom: 10px dashed white;
+}
+
+@keyframes logoApple {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
 }

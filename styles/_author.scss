@@ -1,0 +1,57 @@
+.author {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 5px solid black;
+  height: 100vh;
+  .flex {
+    flex: 1;
+  }
+}
+
+.author-image {
+  background: blueviolet;
+  .contact-txt {
+    font-size: $bigFont;
+  }
+  .author-img {
+    width: 100%;
+  }
+  border-right: 10px solid black;
+}
+
+.author-form {
+  background: antiquewhite;
+
+  .contact-txt {
+    font-size: $bigFont;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    label {
+      margin: 1rem;
+    }
+    input {
+      padding: 1rem;
+      margin: 1rem;
+    }
+    textarea {
+      margin: 4rem;
+    }
+
+    button {
+      border: none;
+      padding: 2rem 4rem;
+      width: 50%;
+      background: blueviolet;
+      color: white;
+      font-size: 3rem;
+      font-family: ANton;
+      border: 5px solid black;
+    }
+  }
+}

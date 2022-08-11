@@ -2,6 +2,7 @@ $header1: 4rem;
 $header2: 3.5rem;
 $header3: 2rem;
 $text: 1.5rem;
+$bigFont: 15rem;
 
 @mixin flex($justify, $align, $direction) {
   display: flex;
@@ -14,3 +15,4 @@ $text: 1.5rem;
 @import "nav";
 @import "hero";
 @import "products";
+@import "author";

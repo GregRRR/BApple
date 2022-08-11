@@ -95,9 +95,34 @@
 
     <!-- PRODUCTS -->
     <section class="products">
-      <div><h2>iPhone</h2></div>
-      <div><h2>iPad</h2></div>
-      <div><h2>iMac</h2></div>
+      <div class="product-items"><h5>iPhone</h5></div>
+      <div class="product-items"><h5>iPad</h5></div>
+      <div class="product-items"><h5>iMac</h5></div>
+    </section>
+
+    <!-- AUTHOR -->
+    <section class="author">
+      <div class="flex author-image">
+        <h1 class="contact-txt">AUTHOR: G.RAWINSKI</h1>
+        <img class="author-img" src="./img/author.png" alt="" />
+      </div>
+      <div class="flex author-form">
+        <h1 class="contact-txt">Get in <br />touch.</h1>
+        <form action="submit">
+          <label for="name">Name<input type="text" required /></label>
+          <label for="email">E-mail<input type="email" required /></label>
+          <label for="message"
+            >Message<br />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </label>
+          <button>Submit</button>
+        </form>
+      </div>
     </section>
   </body>
 </html>

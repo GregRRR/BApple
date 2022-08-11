@@ -127,6 +127,7 @@ nav {
 .hero {
   display: flex;
   flex-wrap: wrap;
+  border-bottom: 10px solid black;
 }
 .hero .flex {
   flex: 1;
@@ -150,7 +151,7 @@ nav {
 }
 
 .about-container {
-  background: white;
+  background: antiquewhite;
   color: black;
 }
 .about-container .one-more-thing {
@@ -163,4 +164,94 @@ nav {
 }
 .about-container span {
   color: red;
+}
+
+.product-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.product-items h5 {
+  font-size: 15rem;
+  background: yellow;
+  padding: 2rem 5rem;
+  box-shadow: 1rem 1rem red, 2rem 2rem #8600d3;
+  border-top: 5px solid black;
+  border-left: 10px solid black;
+}
+
+.product-items:nth-child(1) {
+  background-image: url(../img/iphone.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.product-items:nth-child(2) {
+  background-image: url(../img/ipad.jpg);
+  background-size: cover;
+  background-repeat: none;
+  background-attachment: fixed;
+}
+
+.product-items:nth-child(3) {
+  background-image: url(../img/imac.jpeg);
+  background-size: cover;
+  background-repeat: none;
+  background-attachment: fixed;
+}
+
+.author {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 5px solid black;
+  height: 100vh;
+}
+.author .flex {
+  flex: 1;
+}
+
+.author-image {
+  background: blueviolet;
+  border-right: 10px solid black;
+}
+.author-image .contact-txt {
+  font-size: 15rem;
+}
+.author-image .author-img {
+  width: 100%;
+}
+
+.author-form {
+  background: antiquewhite;
+}
+.author-form .contact-txt {
+  font-size: 15rem;
+}
+.author-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.author-form form label {
+  margin: 1rem;
+}
+.author-form form input {
+  padding: 1rem;
+  margin: 1rem;
+}
+.author-form form textarea {
+  margin: 4rem;
+}
+.author-form form button {
+  border: none;
+  padding: 2rem 4rem;
+  width: 50%;
+  background: blueviolet;
+  color: white;
+  font-size: 3rem;
+  font-family: ANton;
+  border: 5px solid black;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,58 @@
+.icons {
+  height: 10vh;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: $header1;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 2rem;
+  text-shadow: 3px 3px white;
+  font-family: "Anton", sans-serif;
+  font-weight: 900;
+}
+
+.logo {
+  display: flex;
+  flex: 1 1 auto;
+
+  .logo-icon {
+    height: 10vh;
+    margin: 1rem 1rem 1rem 10rem;
+    fill: rgb(27, 20, 20);
+    stroke: black;
+    stroke-width: 5px;
+    text-shadow: 10px 10px black;
+  }
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+
+  a {
+    text-decoration: none;
+    color: black;
+    padding: 2rem;
+    font-size: $header2;
+    text-shadow: 3px 3px white;
+    font-family: "Anton", sans-serif;
+  }
+
+  .icon-github {
+    height: 5vh;
+    fill: rgb(14, 12, 12);
+  }
+
+  .icon-linked {
+    height: 5vh;
+    fill: rgb(14, 12, 12);
+  }
+}
+
+nav {
+  display: flex;
+  background-color: red;
+}
